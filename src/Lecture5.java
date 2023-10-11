@@ -22,7 +22,7 @@ int count=0;
             }
         }System.out.println (count);
     }*/
-
+//test
     public static void main (String[] args) {
         String s = "Посмотрите как Рите нравится ритм";
 
