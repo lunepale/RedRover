@@ -31,15 +31,15 @@ public class codewarsPractice {
         return sum;
 
 }
-    public static int[] makeNegative(final int x) {
+   /* public static int[] makeNegative(final int x) {
 
         if (x < 0) {
             return x;
         } else {
             return -x;
-        }
+        }*/
 
-        public static int[] countPositivesSumNegatives(int[] input){
+       /* public static int[] countPositivesSumNegatives(int[] input){
             if (input == null || input.length == 0) {
                 return new int[]{};
             }
@@ -57,7 +57,7 @@ public class codewarsPractice {
 
             return new int[]{countPositives, sumNegatives};
         }
-    }
+    }*/
 
     }
 

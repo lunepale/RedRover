@@ -1,3 +1,5 @@
+package classes;
+
 public class soldo {
     public static void main(String[] args) {
         int lancers = 120;
