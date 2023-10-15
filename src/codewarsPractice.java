@@ -1,6 +1,7 @@
 public class codewarsPractice {
     public static void main (String[] args) {
-        evenOrOdd (-7);
+       // evenOrOdd (-7);
+        System.out.println (hexToDec ("1"));
     }
 
     public static String evenOrOdd (int number) {
@@ -58,8 +59,45 @@ public class codewarsPractice {
             return new int[]{countPositives, sumNegatives};
         }
     }*/
+      /* public static int findDifference(final int[] firstCuboid, final int[] secondCuboid) {
+           int volume1 = 0;
+           int volume2 = 0;
+           for (int i = 0; i < firstCuboid.length; i++) {
+               volume1 = volume1 * firstCuboid[i];
+           }
+           for (int j = 0; j < secondCuboid.length; j++) {
+               volume2 = volume2 * secondCuboid[j];
+           }
+           return (volume1 > volume2) ? volume1 - volume2 : volume2 - volume1;
+       }*/
 
+    public static int hexToDec(final String hexString) {
+        //как написать если ты сраный кретин
+        String digits = "0123456789ABCDEF";
+        String  hex = hexString.toUpperCase();
+        int decimalValue = 0;
+        boolean isNegative = false;
+        if(hex.charAt(0)=='-'){
+            isNegative = true;
+            for (int i = 1; i < hex.length(); i++) {
+                char c = hex.charAt(i);
+                int d = digits.indexOf(c);
+                decimalValue = 16 * decimalValue + d;
+        }}else{
+            for (int i = 0; i < hex.length(); i++) {
+                char c = hex.charAt(i);
+                int d = digits.indexOf(c);
+                decimalValue = 16 * decimalValue + d;  }
+                }
+
+        return isNegative ? -decimalValue : decimalValue;
+        //как написать если ты умный
+       // return Integer.parseInt(hexString, 16); И ВСЁ БЛЯТЬ
     }
+}
+
+
+
 
 
 
