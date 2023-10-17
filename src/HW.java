@@ -4,6 +4,7 @@ public class HW {
         checkSumSign ();
         printColor ();
         compareNumber ();
+
     }
 
 

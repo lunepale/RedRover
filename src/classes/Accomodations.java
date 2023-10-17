@@ -1,26 +1,29 @@
 package classes;
 
 public class Accomodations {
-   public Hotel[] hotels;
+
+  public Housing[] housings;
+
 
     public int totalCapacity(){
         int sum = 0;
-        for (int i = 0; i < hotels.length; i++) {
-            Hotel h = hotels[i];
+        for (int i = 0; i < housings.length; i++) {
+            Housing h = housings[i];
             sum += h.getCapacity();
         }
         return sum; }
 
     public void printAll(){
-        for (int i = 0; i < hotels.length ; i++) {
-            Hotel h = hotels[i];
+        System.out.println ("All housing:");
+        for (int i = 0; i < housings.length ; i++) {
+            Housing h = housings[i];
             System.out.println (h.getPrintable ());
         }
 
     }
-public Hotel findForNGroup(int groupSize){
-    for (int i = 0; i < hotels.length; i++) {
-        Hotel h = hotels[i];
+public Housing findForNGroup(int groupSize){
+    for (int i = 0; i < housings.length; i++) {
+        Housing h = housings[i];
         if (h.getCapacity () >= groupSize){
             return h;
         }
