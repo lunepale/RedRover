@@ -1,7 +1,10 @@
 public class codewarsPractice {
     public static void main (String[] args) {
        // evenOrOdd (-7);
-        System.out.println (hexToDec ("1"));
+//abbrevName ("vlad Pechenyi");
+//feast ("BlueWhale", "Big Ego");
+        tripleTrouble ("this", "test", "twit");
+        position ('B');
     }
 
     public static String evenOrOdd (int number) {
@@ -71,7 +74,9 @@ public class codewarsPractice {
            return (volume1 > volume2) ? volume1 - volume2 : volume2 - volume1;
        }*/
 
-    public static int hexToDec(final String hexString) {
+
+
+ /*   public static int hexToDec(final String hexString) {
         //как написать если ты сраный кретин
         String digits = "0123456789ABCDEF";
         String  hex = hexString.toUpperCase();
@@ -93,8 +98,40 @@ public class codewarsPractice {
         return isNegative ? -decimalValue : decimalValue;
         //как написать если ты умный
        // return Integer.parseInt(hexString, 16); И ВСЁ БЛЯТЬ
+
+    }*/
+    public static String abbrevName(String name) {
+
+        name = (name.substring (0,1) + '.' + name.substring (name.indexOf (' ')+1, name.indexOf (' ')+2)).toUpperCase ();
+
+        return name.toUpperCase ();
+    }
+
+    public static boolean feast(String beast, String dish){
+        if (beast.charAt (0) == dish.charAt (0) && beast.charAt (beast.length ()-1) == dish.charAt (dish.length ()-1)){
+            return true;
+        }else{
+        return false;
+    }}
+    public static String tripleTrouble(String one, String two, String three) {
+       String result = "";
+        for (int i = 0; i < one.length (); i++) {
+            result += one.substring (i,i+1) + two.substring (i, i+1) + three.substring (i, i+1);
+        } return result;
+    }
+
+   /* When provided with a letter, return its position in the alphabet.
+
+            Input :: "a"
+
+    Ouput :: "Position of alphabet: 1"*/
+    public static String position(char alphabet)
+    {
+        String allLetters = "abcdefghijklmnopqrstuvwxyz";
+                return "Position of alphabet: " +allLetters.indexOf (alphabet)+1;
     }
 }
+
 
 
 
