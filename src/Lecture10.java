@@ -7,11 +7,15 @@ public class Lecture10 {
 
 
        // System.out.println (bio.getNumberOfStudents ());
-        bio.giveGrade ("Ivanov",1,4);
         bio.unlock ();
-        bio.giveGrade ("Sidorov",5,2);
+        bio.giveGrade ("Ivanov",1,new Grade (5));
+        bio.giveGrade ("Ivanov",2,new Grade (7));
+        bio.giveGrade ("Ivanov",3,new Grade (2));
+        bio.giveGrade ("Sidorov",5,new Grade (-1));
+        bio.giveGrade ("Petrov", 20,new Grade (0));
         bio.print ();
 
+        System.out.println (bio.getFinalGrade ("Ivanov"));
 
 
 
